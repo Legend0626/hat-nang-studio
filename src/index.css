@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, "Segoe UI", sans-serif;
+  --font-serif: "Times New Roman", Georgia, serif;
+}
+
+@layer base {
+  :root {
+    --wine: #4D0202;
+    --wine-dark: #370101;
+    --wine-light: #6A1414;
+    --cream: #FFF3DD;
+    --cream-light: #FFFBF3;
+    --cream-card: #FAF1DF;
+    --cream-border: #ECDBC0;
+  }
+
+  body {
+    font-family: Arial, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: normal;
+    font-kerning: normal;
+    background-color: #FFF3DD;
+    color: #2F0B0B;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Times New Roman", Georgia, serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+  }
+
+  .font-cormorant {
+    font-family: "Times New Roman", Georgia, serif;
+  }
+
+  button, input, textarea, select {
+    font: inherit;
+  }
+}
+
+/* Custom aesthetic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF3DD;
+}
+::-webkit-scrollbar-thumb {
+  background: #4D0202;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6A1414;
+}
+
+/* Lightbox & modal animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

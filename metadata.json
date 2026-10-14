@@ -1,0 +1,8 @@
+{
+  "name": "Hạt Nắng Studio - Gom Nắng, Giữ Khoảnh Khắc",
+  "description": "Website chính thức của Hạt Nắng Studio - Hệ thống đặt lịch và giới thiệu các concept chụp ảnh cá nhân, nàng thơ, sinh nhật, nghệ thuật chuyên nghiệp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
